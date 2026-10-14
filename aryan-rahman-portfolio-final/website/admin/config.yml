@@ -1,0 +1,128 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# শুধু localhost-এ চালালে কাজ করে (npx decap-server), লাইভ সাইটে কোনো প্রভাব নেই
+local_backend: true
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: https://YOUR-SITE.netlify.app
+display_url: https://YOUR-SITE.netlify.app
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "home"
+        label: "Homepage"
+        file: "content/site.json"
+        fields:
+          - label: "Settings"
+            name: "settings"
+            widget: "object"
+            fields:
+              - { label: "Site name", name: "siteTitle", widget: "string" }
+              - { label: "Logo (header)", name: "logo", widget: "image", required: false }
+              - { label: "Accent color (button & bars)", name: "accent", widget: "color", default: "#4F36DB" }
+              - { label: "Contact email", name: "email", widget: "string" }
+
+          - label: "Navigation"
+            name: "nav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link (e.g. #projects or https://...)", name: "href", widget: "string" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "title", widget: "string" }
+              - { label: "Intro text (use **bold** for dark words)", name: "text", widget: "text" }
+              - { label: "Button label", name: "buttonLabel", widget: "string" }
+              - { label: "Button link", name: "buttonLink", widget: "string" }
+              - { label: "Photo (transparent PNG works best)", name: "photo", widget: "image", required: false }
+              - { label: "Photo alt text", name: "photoAlt", widget: "string", required: false }
+
+          - label: "Trusted by"
+            name: "trust"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Logo image (optional)", name: "image", widget: "image", required: false }
+
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Section title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "text", widget: "text" }
+
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            summary: "{{fields.value}} — {{fields.label}}"
+            fields:
+              - { label: "Value (e.g. 120+)", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Skills"
+            name: "skills"
+            widget: "object"
+            fields:
+              - { label: "Section title", name: "title", widget: "string" }
+              - { label: "Intro", name: "text", widget: "text" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}} ({{fields.level}}%)"
+                fields:
+                  - { label: "Skill", name: "name", widget: "string" }
+                  - { label: "Level (0-100)", name: "level", widget: "number", value_type: "int", min: 0, max: 100, default: 80 }
+
+          - label: "Projects"
+            name: "projects"
+            widget: "object"
+            fields:
+              - { label: "Section title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Category", name: "category", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Cover image", name: "image", widget: "image", required: false }
+                  - { label: "Link", name: "link", widget: "string", default: "#" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Button label", name: "buttonLabel", widget: "string" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }

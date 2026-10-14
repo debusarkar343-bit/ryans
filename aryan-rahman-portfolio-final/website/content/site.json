@@ -1,0 +1,171 @@
+{
+  "settings": {
+    "siteTitle": "Aryan Rahman",
+    "logo": "/images/logo.png",
+    "accent": "#4F36DB",
+    "email": "hello@myfolio.com"
+  },
+  "nav": [
+    {
+      "label": "About Us",
+      "href": "#about"
+    },
+    {
+      "label": "Project",
+      "href": "#projects"
+    },
+    {
+      "label": "Services",
+      "href": "#services"
+    },
+    {
+      "label": "Contact us",
+      "href": "#contact"
+    }
+  ],
+  "hero": {
+    "title": "Hi, I’m a Prompt Engineer AI Marketing Specialist",
+    "text": "I am a professional AI Specialist leveraging the synergy between Artificial Intelligence and Digital Marketing to accelerate business growth and brand value. I specialize in utilizing Generative AI, advanced prompt engineering, and AI automation tools to craft high-converting marketing campaigns, strategic content frameworks, and compelling visual assets.",
+    "buttonLabel": "Connect with me",
+    "buttonLink": "#contact",
+    "photo": "/images/hero.jpg",
+    "photoAlt": "Portrait of the designer"
+  },
+  "trust": {
+    "label": "Tools & platforms I work with",
+    "logos": [
+      {
+        "name": "ChatGPT",
+        "image": ""
+      },
+      {
+        "name": "Claude",
+        "image": ""
+      },
+      {
+        "name": "Gemini",
+        "image": ""
+      },
+      {
+        "name": "Midjourney",
+        "image": ""
+      }
+    ]
+  },
+  "services": {
+    "title": "My Services",
+    "intro": "I combine AI tools with digital marketing strategy to plan, create and automate the work that grows your brand.",
+    "items": [
+      {
+        "title": "AI-Powered Digital Marketing & Campaigns",
+        "text": "Data-informed campaigns planned and optimized with AI, from audience research and ad copy to funnels built to convert."
+      },
+      {
+        "title": "Advanced Prompt Engineering",
+        "text": "Structured, tested prompts and prompt systems that deliver consistent, on-brand results from text and image AI models."
+      },
+      {
+        "title": "AI Visual Generation & Product Photography",
+        "text": "Studio-quality product shots, lifestyle scenes and brand visuals created with generative AI, without a photoshoot."
+      },
+      {
+        "title": "Content Creation & Workflow Automation",
+        "text": "Content frameworks and automated pipelines that take ideas to published posts, emails and reports in a fraction of the time."
+      },
+      {
+        "title": "Interactive Web & Presentation Design",
+        "text": "Responsive landing pages and polished slide decks that present your offer clearly and keep people engaged."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": "8+",
+      "label": "Years of experience"
+    },
+    {
+      "value": "120+",
+      "label": "Projects delivered"
+    },
+    {
+      "value": "45",
+      "label": "Happy clients"
+    },
+    {
+      "value": "12",
+      "label": "Design awards"
+    }
+  ],
+  "skills": {
+    "title": "Skills & expertise",
+    "text": "Where AI meets marketing: the skills I rely on to plan, create and automate campaigns from start to finish.",
+    "items": [
+      {
+        "name": "Prompt Engineering",
+        "level": 95
+      },
+      {
+        "name": "Generative AI (Text & Image)",
+        "level": 92
+      },
+      {
+        "name": "AI Digital Marketing",
+        "level": 90
+      },
+      {
+        "name": "AI Content Creation",
+        "level": 88
+      },
+      {
+        "name": "Workflow Automation",
+        "level": 85
+      },
+      {
+        "name": "Web & Presentation Design",
+        "level": 80
+      }
+    ]
+  },
+  "projects": {
+    "title": "Selected projects",
+    "intro": "A look at how I apply AI across marketing, prompt engineering, visual generation and web design.",
+    "items": [
+      {
+        "title": "AI-Powered Digital Marketing",
+        "category": "AI Marketing",
+        "description": "An AI-driven marketing workspace that connects campaign analytics, content pipelines and automated publishing.",
+        "image": "/images/projects/ai-marketing.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Advanced Prompt Engineering",
+        "category": "Prompt Engineering",
+        "description": "Structured prompts, chain-of-thought and A/B testing across GPT, Claude and Gemini for consistent results.",
+        "image": "/images/projects/prompt-engineering.jpg",
+        "link": "#"
+      },
+      {
+        "title": "AI Visual Generation & Product Photography",
+        "category": "AI Visuals",
+        "description": "Studio-style product and lifestyle visuals generated with AI, replacing the traditional photoshoot.",
+        "image": "/images/projects/ai-visuals.jpg",
+        "link": "#"
+      },
+      {
+        "title": "Interactive Web & Presentation Design",
+        "category": "Web Design",
+        "description": "Responsive landing pages and presentation layouts built around a clear user experience framework.",
+        "image": "/images/projects/web-presentation.jpg",
+        "link": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let’s build something together",
+    "text": "Have a product, a redesign or a launch coming up? Send a short note and I’ll reply within two working days.",
+    "buttonLabel": "Connect with me"
+  },
+  "footer": {
+    "text": "Aryan Rahman — AI Marketing Specialist & Prompt Engineer"
+  }
+}

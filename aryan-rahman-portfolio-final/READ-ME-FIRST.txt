@@ -1,0 +1,27 @@
+ARYAN RAHMAN PORTFOLIO - FINAL PACKAGE
+======================================
+
+What is inside
+--------------
+website/                      The complete website. Upload the CONTENTS of this folder to GitHub.
+project-zip-generator.html    Optional. Open in a browser and click "Download Project ZIP"
+                              to re-create the website ZIP at any time (needs internet).
+
+Quick steps
+-----------
+1. Unzip this file.
+2. Open the "website" folder. Select everything inside it (index.html, admin, content, images, SETUP.md)
+   and upload it to a new GitHub repository. Keep the folder structure.
+3. On Netlify choose "Import from Git", pick the repository, leave build command and publish directory empty.
+4. Follow website/SETUP.md for the CMS login (Netlify Identity + Git Gateway).
+5. In website/admin/config.yml replace YOUR-SITE.netlify.app with your real Netlify domain.
+
+Admin login
+-----------
+The CMS signs in with EMAIL + PASSWORD through Netlify Identity. Invite your email in Netlify and set
+your password from the invite link. A plain username such as ADMIN cannot be set in Decap CMS, and no
+password is stored in any file because the repository and /admin are public.
+
+Placeholders to replace before going live
+-----------------------------------------
+Email address, stats numbers, skill percentages and project links (edit in /admin or content/site.json).

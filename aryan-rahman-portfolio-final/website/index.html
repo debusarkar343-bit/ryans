@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aryan Rahman — AI Marketing Specialist &amp; Prompt Engineer</title>
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <meta name="theme-color" content="#E9E9E9" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aryan Rahman — AI Marketing Specialist &amp; Prompt Engineer" />
+  <meta property="og:description" content="Generative AI, advanced prompt engineering and AI automation to grow brands." />
+  <meta name="description" content="AI Marketing Specialist and Prompt Engineer using Generative AI, prompt engineering and AI automation to grow brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'] } } }
+    };
+  </script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <style>
+    :root {
+      --accent: #4F36DB;      /* CMS-এর Settings > Accent color থেকেও বদলানো যায় */
+      --ink: #0A0A0A;
+      --paper: #FCFCFB;
+      --line: #E3E3E3;
+      --muted: #6A6A6A;
+      --bg: #E9E9E9;
+    }
+    html, body { max-width: 100%; overflow-x: hidden; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+    }
+    section[id] { scroll-margin-top: 16px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+    .frame {
+      position: relative;
+      background-color: var(--paper);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+      border: 1px solid var(--line);
+    }
+    .frame::before, .frame::after {
+      content: ""; position: absolute; top: 0; bottom: 0; width: 1px;
+      background: var(--line); display: none; pointer-events: none; z-index: 1;
+    }
+    .pad { padding-left: 1.25rem; padding-right: 1.25rem; }
+    @media (min-width: 1024px) {
+      .frame::before, .frame::after { display: block; }
+      .frame::before { left: 48px; }
+      .frame::after { right: 48px; }
+      .pad { padding-left: 96px; padding-right: 96px; }
+    }
+    .rule { border-color: var(--line); }
+    .hero-title { font-size: clamp(2.3rem, 5vw, 3.75rem); line-height: 1; letter-spacing: -0.045em; font-weight: 600; text-wrap: balance; }
+    .h2 { font-size: clamp(2rem, 4.2vw, 3.25rem); line-height: 1.02; letter-spacing: -0.04em; font-weight: 600; }
+    .bar-fill { width: 0; transition: width 1.1s cubic-bezier(.2,.7,.2,1); }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .bar-fill { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded">Skip to content</a>
+
+  <!-- Background shapes -->
+  <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none" aria-hidden="true">
+    <div class="absolute -left-[260px] top-[230px] w-[520px] h-[520px] rounded-full border-[90px] border-[#DEDEDE]"></div>
+    <div class="absolute left-[18%] -top-[240px] w-[480px] h-[480px] rounded-full border-[90px] border-[#DEDEDE]"></div>
+    <div class="absolute -right-[60px] bottom-[60px] w-[320px] h-[90px] rounded-2xl bg-[#DEDEDE] rotate-[35deg]"></div>
+    <div class="absolute -right-[120px] bottom-[-40px] w-[320px] h-[90px] rounded-2xl bg-[#DEDEDE] rotate-[35deg]"></div>
+  </div>
+
+  <div class="lg:py-[70px] lg:px-6">
+    <div class="frame max-w-[1166px] mx-auto">
+
+      <!-- Header -->
+      <header class="relative border-b rule">
+        <div class="pad flex items-center justify-between h-[64px]">
+          <div class="flex items-center gap-8">
+            <a href="#top" class="flex items-center gap-2.5 text-[19px] sm:text-[21px] font-semibold tracking-[-0.04em] text-[#0B2C5F] whitespace-nowrap" aria-label="Home">
+              <img id="brandLogo" src="/images/logo.png" alt="" class="h-9 w-auto" width="37" height="38" />
+              <span id="brandName">Aryan Rahman</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-7 text-[14px] text-[var(--muted)]" id="navDesktop" aria-label="Primary"></nav>
+          </div>
+          <div class="flex items-center gap-3">
+            <a id="emailLink" href="mailto:hello@myfolio.com" class="flex items-center gap-2 text-[14px] font-medium">
+              <span class="grid place-items-center w-8 h-8 rounded-full border rule bg-white">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <span id="emailText" class="hidden sm:inline underline underline-offset-4 decoration-1">hello@myfolio.com</span>
+            </a>
+            <button id="menuBtn" class="md:hidden grid place-items-center w-10 h-10 rounded-full border rule bg-white" aria-expanded="false" aria-controls="navMobile" aria-label="Open menu">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+            </button>
+          </div>
+        </div>
+        <nav id="navMobile" class="hidden md:hidden border-t rule bg-white px-5 py-3 flex-col text-[15px]" aria-label="Mobile"></nav>
+      </header>
+
+      <main id="main">
+        <!-- Hero -->
+        <section id="top" class="grid lg:grid-cols-[55.6%_44.4%]">
+          <div class="pad py-14 lg:py-0 flex flex-col justify-center lg:min-h-[565px] lg:pr-10">
+            <h1 id="heroTitle" class="hero-title max-w-[12em]">Hi, I’m a Prompt Engineer AI Marketing Specialist</h1>
+            <p id="heroText" class="mt-6 max-w-[34em] text-[15px] leading-[1.7] text-[var(--muted)]">I am a professional AI Specialist leveraging the synergy between Artificial Intelligence and Digital Marketing to accelerate business growth and brand value. I specialize in utilizing Generative AI, advanced prompt engineering, and AI automation tools to craft high-converting marketing campaigns, strategic content frameworks, and compelling visual assets.</p>
+            <div class="mt-9">
+              <a id="heroBtn" href="#contact" class="inline-flex items-center justify-center h-[52px] px-8 rounded-full bg-[var(--accent)] text-white text-[14px] font-medium tracking-[0.04em] uppercase transition hover:brightness-110 active:scale-[.98]">Connect with me</a>
+            </div>
+          </div>
+          <div class="relative border-t lg:border-t-0 lg:border-l rule overflow-hidden min-h-[420px] lg:min-h-[565px]">
+            <img id="heroPhoto" src="/images/hero.jpg" alt="Portrait of the designer" class="block w-full h-[460px] sm:h-[520px] lg:h-full lg:absolute lg:top-0 lg:left-0 lg:w-[calc(100%-48px)] object-cover object-[50%_18%]" width="768" height="1374" fetchpriority="high" />
+          </div>
+        </section>
+
+        <!-- Trusted by -->
+        <section class="grid lg:grid-cols-[minmax(300px,26%)_1fr] border-t rule" aria-label="Tools and platforms">
+          <p id="trustLabel" class="pad lg:!pr-6 py-6 lg:py-0 flex items-center text-[12.5px] leading-[1.55] uppercase lg:border-r rule">Tools &amp; platforms I work with</p>
+          <ul id="logos" class="grid grid-cols-2 sm:grid-cols-4 items-center gap-y-6 px-5 lg:pl-8 lg:pr-[96px] py-6 lg:py-[34px] border-t lg:border-t-0 rule"></ul>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="pad py-16 lg:py-24 border-t rule">
+          <div class="grid lg:grid-cols-[1fr_1fr] gap-6 lg:gap-16 items-end">
+            <h2 id="servicesTitle" class="h2 max-w-[10em]">My Services</h2>
+            <p id="servicesIntro" class="text-[15px] leading-[1.7] text-[var(--muted)] max-w-[34em]"></p>
+          </div>
+          <ul id="servicesList" class="mt-12 grid grid-cols-1 md:grid-cols-6 gap-px bg-[var(--line)] border rule"></ul>
+        </section>
+
+        <!-- Stats -->
+        <section class="relative z-[2] bg-[var(--ink)] text-white" aria-label="Stats">
+          <ul id="statsList" class="pad py-12 lg:py-16 grid grid-cols-2 md:grid-cols-4 gap-y-10"></ul>
+        </section>
+
+        <!-- Skills -->
+        <section id="about" class="pad py-16 lg:py-24">
+          <div class="grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-20">
+            <div>
+              <h2 id="skillsTitle" class="h2 max-w-[9em]">Skills &amp; expertise</h2>
+              <p id="skillsText" class="mt-5 text-[15px] leading-[1.7] text-[var(--muted)] max-w-[30em]"></p>
+            </div>
+            <ul id="skillsList" class="space-y-6"></ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="pad py-16 lg:py-24 border-t rule">
+          <div class="grid lg:grid-cols-[1fr_1fr] gap-6 lg:gap-16 items-end">
+            <h2 id="projectsTitle" class="h2">Selected projects</h2>
+            <p id="projectsIntro" class="text-[15px] leading-[1.7] text-[var(--muted)] max-w-[34em]"></p>
+          </div>
+          <ul id="projectsList" class="mt-12 grid sm:grid-cols-2 gap-x-6 gap-y-12"></ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="pad py-20 lg:py-28 border-t rule">
+          <h2 id="contactTitle" class="h2 max-w-[9em]" style="font-size:clamp(2.4rem,6vw,4.4rem)">Let’s build something together</h2>
+          <p id="contactText" class="mt-6 max-w-[30em] text-[15px] leading-[1.7] text-[var(--muted)]"></p>
+          <a id="contactBtn" href="mailto:hello@myfolio.com" class="mt-9 inline-flex items-center justify-center h-[52px] px-8 rounded-full bg-[var(--accent)] text-white text-[14px] font-medium tracking-[0.04em] uppercase transition hover:brightness-110 active:scale-[.98]">Connect with me</a>
+        </section>
+      </main>
+
+      <footer class="pad border-t rule py-6 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-[13px] text-[var(--muted)]">
+        <p id="footerText">Aryan Rahman — AI Marketing Specialist &amp; Prompt Engineer</p>
+        <p>© <span id="year"></span> All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // ===== Default content (used if content/site.json can't be loaded) =====
+    const DEFAULTS = {
+      settings: { siteTitle: "Aryan Rahman", logo: "/images/logo.png", accent: "#4F36DB", email: "hello@myfolio.com" },
+      nav: [
+        { label: "About Us", href: "#about" },
+        { label: "Project", href: "#projects" },
+        { label: "Services", href: "#services" },
+        { label: "Contact us", href: "#contact" }
+      ],
+      hero: {
+        title: "Hi, I’m a Prompt Engineer AI Marketing Specialist",
+        text: "I am a professional AI Specialist leveraging the synergy between Artificial Intelligence and Digital Marketing to accelerate business growth and brand value. I specialize in utilizing Generative AI, advanced prompt engineering, and AI automation tools to craft high-converting marketing campaigns, strategic content frameworks, and compelling visual assets.",
+        buttonLabel: "Connect with me",
+        buttonLink: "#contact",
+        photo: "/images/hero.jpg",
+        photoAlt: "Portrait of the designer"
+      },
+      trust: {
+        label: "Tools & platforms I work with",
+        logos: [{ name: "ChatGPT", image: "" }, { name: "Claude", image: "" }, { name: "Gemini", image: "" }, { name: "Midjourney", image: "" }]
+      },
+      services: {
+        title: "My Services",
+        intro: "I combine AI tools with digital marketing strategy to plan, create and automate the work that grows your brand.",
+        items: [
+          { title: "AI-Powered Digital Marketing & Campaigns", text: "Data-informed campaigns planned and optimized with AI, from audience research and ad copy to funnels built to convert." },
+          { title: "Advanced Prompt Engineering", text: "Structured, tested prompts and prompt systems that deliver consistent, on-brand results from text and image AI models." },
+          { title: "AI Visual Generation & Product Photography", text: "Studio-quality product shots, lifestyle scenes and brand visuals created with generative AI, without a photoshoot." },
+          { title: "Content Creation & Workflow Automation", text: "Content frameworks and automated pipelines that take ideas to published posts, emails and reports in a fraction of the time." },
+          { title: "Interactive Web & Presentation Design", text: "Responsive landing pages and polished slide decks that present your offer clearly and keep people engaged." }
+        ]
+      },
+      stats: [
+        { value: "8+", label: "Years of experience" },
+        { value: "120+", label: "Projects delivered" },
+        { value: "45", label: "Happy clients" },
+        { value: "12", label: "Design awards" }
+      ],
+      skills: {
+        title: "Skills & expertise",
+        text: "Where AI meets marketing: the skills I rely on to plan, create and automate campaigns from start to finish.",
+        items: [
+          { name: "Prompt Engineering", level: 95 },
+          { name: "Generative AI (Text & Image)", level: 92 },
+          { name: "AI Digital Marketing", level: 90 },
+          { name: "AI Content Creation", level: 88 },
+          { name: "Workflow Automation", level: 85 },
+          { name: "Web & Presentation Design", level: 80 }
+        ]
+      },
+      projects: {
+        title: "Selected projects",
+        intro: "A look at how I apply AI across marketing, prompt engineering, visual generation and web design.",
+        items: [
+          { title: "AI-Powered Digital Marketing", category: "AI Marketing", description: "An AI-driven marketing workspace that connects campaign analytics, content pipelines and automated publishing.", image: "/images/projects/ai-marketing.jpg", link: "#" },
+          { title: "Advanced Prompt Engineering", category: "Prompt Engineering", description: "Structured prompts, chain-of-thought and A/B testing across GPT, Claude and Gemini for consistent results.", image: "/images/projects/prompt-engineering.jpg", link: "#" },
+          { title: "AI Visual Generation & Product Photography", category: "AI Visuals", description: "Studio-style product and lifestyle visuals generated with AI, replacing the traditional photoshoot.", image: "/images/projects/ai-visuals.jpg", link: "#" },
+          { title: "Interactive Web & Presentation Design", category: "Web Design", description: "Responsive landing pages and presentation layouts built around a clear user experience framework.", image: "/images/projects/web-presentation.jpg", link: "#" }
+        ]
+      },
+      contact: {
+        title: "Let’s build something together",
+        text: "Have a product, a redesign or a launch coming up? Send a short note and I’ll reply within two working days.",
+        buttonLabel: "Connect with me"
+      },
+      footer: { text: "Aryan Rahman — AI Marketing Specialist & Prompt Engineer" }
+    };
+
+    const PLACEHOLDER = "data:image/svg+xml;utf8," + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9c9c9"/><stop offset="1" stop-color="#9a9a9a"/></linearGradient></defs><ellipse cx="300" cy="230" rx="105" ry="125" fill="url(#g)"/><path d="M40 700c0-170 100-290 260-290s260 120 260 290z" fill="url(#g)"/></svg>'
+    );
+
+    // ===== Helpers =====
+    const $ = (s) => document.querySelector(s);
+    const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const fmt = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong class="font-medium text-[var(--ink)]">$1</strong>');
+    const safeUrl = (u) => (/^(https?:|mailto:|#|\/)/i.test(u || "") ? u : "#");
+    const merge = (a, b) => {
+      if (Array.isArray(b)) return b;
+      if (b && typeof b === "object") { const o = { ...(a || {}) }; for (const k in b) o[k] = merge(a ? a[k] : undefined, b[k]); return o; }
+      return b === undefined || b === null ? a : b;
+    };
+
+    const ICONS = [
+      '<path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/>',
+      '<path d="m4 7 5 5-5 5M12 18h8"/>',
+      '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-9 9"/>',
+      '<rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path d="M6 9v3a3 3 0 0 0 3 3h6"/>',
+      '<rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4"/>'
+    ];
+
+    // ===== Render =====
+    function render(d) {
+      document.documentElement.style.setProperty("--accent", d.settings.accent || "#4F36DB");
+      document.title = d.settings.siteTitle + " — AI Marketing Specialist & Prompt Engineer";
+      $("#brandName").textContent = d.settings.siteTitle;
+      const bl = $("#brandLogo");
+      if (d.settings.logo) { bl.src = d.settings.logo; bl.hidden = false; } else { bl.hidden = true; }
+
+      const mail = "mailto:" + d.settings.email;
+      $("#emailLink").href = mail; $("#emailText").textContent = d.settings.email;
+
+      const navHTML = d.nav.map((n) => `<a href="${esc(safeUrl(n.href))}" class="hover:text-[var(--ink)] transition-colors">${esc(n.label)}</a>`).join("");
+      $("#navDesktop").innerHTML = navHTML;
+      $("#navMobile").innerHTML = d.nav.map((n) => `<a href="${esc(safeUrl(n.href))}" class="py-3 border-b rule last:border-b-0">${esc(n.label)}</a>`).join("");
+
+      $("#heroTitle").textContent = d.hero.title;
+      $("#heroText").innerHTML = fmt(d.hero.text);
+      const hb = $("#heroBtn"); hb.textContent = d.hero.buttonLabel; hb.href = safeUrl(d.hero.buttonLink);
+      const ph = $("#heroPhoto"); ph.src = d.hero.photo || PLACEHOLDER; ph.alt = d.hero.photoAlt || "";
+
+      $("#trustLabel").textContent = d.trust.label;
+      $("#logos").innerHTML = d.trust.logos.map((l) =>
+        `<li class="flex items-center justify-center">${l.image
+          ? `<img src="${esc(l.image)}" alt="${esc(l.name)}" class="h-7 w-auto max-w-[120px] object-contain grayscale opacity-60" loading="lazy" />`
+          : `<span class="text-[22px] font-semibold tracking-[-0.04em] text-[#8A8A8A]">${esc(l.name)}</span>`}</li>`).join("");
+
+      $("#servicesTitle").textContent = d.services.title;
+      $("#servicesIntro").textContent = d.services.intro;
+      $("#servicesList").innerHTML = d.services.items.map((s, i, arr) => {
+        const n = arr.length, rem = n % 3, lastRow = rem && i >= n - rem;
+        const span = !lastRow ? "md:col-span-2" : rem === 1 ? "md:col-span-6" : "md:col-span-3";
+        return `
+        <li class="${span} p-7 lg:p-9 bg-[#FDFDFC]">
+          <span class="grid place-items-center w-11 h-11 rounded-full bg-[var(--ink)] text-white">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[i % ICONS.length]}</svg>
+          </span>
+          <h3 class="mt-6 text-[20px] font-semibold tracking-[-0.03em] leading-[1.2]">${esc(s.title)}</h3>
+          <p class="mt-3 text-[14.5px] leading-[1.7] text-[var(--muted)] max-w-[36em]">${esc(s.text)}</p>
+        </li>`;
+      }).join("");
+
+      $("#statsList").innerHTML = d.stats.map((s) => `
+        <li>
+          <p class="text-[clamp(2.6rem,5vw,4rem)] font-semibold tracking-[-0.045em] leading-none">${esc(s.value)}</p>
+          <p class="mt-3 text-[14px] text-white/60">${esc(s.label)}</p>
+        </li>`).join("");
+
+      $("#skillsTitle").textContent = d.skills.title;
+      $("#skillsText").textContent = d.skills.text;
+      $("#skillsList").innerHTML = d.skills.items.map((s) => {
+        const lv = Math.max(0, Math.min(100, Number(s.level) || 0));
+        return `<li>
+          <div class="flex items-baseline justify-between text-[15px]"><span class="font-medium">${esc(s.name)}</span><span class="text-[var(--muted)] tabular-nums">${lv}%</span></div>
+          <div class="mt-2.5 h-[6px] rounded-full bg-[#E4E4E4] overflow-hidden" role="progressbar" aria-valuenow="${lv}" aria-valuemin="0" aria-valuemax="100" aria-label="${esc(s.name)}">
+            <div class="bar-fill h-full rounded-full bg-[var(--accent)]" data-w="${lv}"></div>
+          </div></li>`;
+      }).join("");
+
+      $("#projectsTitle").textContent = d.projects.title;
+      $("#projectsIntro").textContent = d.projects.intro;
+      $("#projectsList").innerHTML = d.projects.items.map((p) => `
+        <li>
+          <a href="${esc(safeUrl(p.link))}" class="group block" ${/^https?:/i.test(p.link || "") ? 'target="_blank" rel="noopener"' : ""}>
+            <div class="aspect-[16/9] overflow-hidden bg-[#EDEDED] border rule grid place-items-center">
+              ${p.image
+                ? `<img src="${esc(p.image)}" alt="${esc(p.title)}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" loading="lazy" />`
+                : `<span class="text-[clamp(4rem,10vw,7rem)] font-semibold tracking-[-0.05em] text-[#D3D3D3]" aria-hidden="true">${esc((p.title || "?").trim().charAt(0))}</span>`}
+            </div>
+            <div class="mt-4 flex items-start justify-between gap-4">
+              <div>
+                <h3 class="text-[20px] font-semibold tracking-[-0.03em]">${esc(p.title)}</h3>
+                <p class="mt-1 text-[13.5px] text-[var(--muted)]">${esc(p.category)}</p>
+              </div>
+              <span class="shrink-0 grid place-items-center w-9 h-9 rounded-full border rule bg-white group-hover:bg-[var(--accent)] group-hover:text-white group-hover:border-transparent transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+            <p class="mt-2 text-[14px] leading-[1.65] text-[var(--muted)] max-w-[34em]">${esc(p.description)}</p>
+          </a>
+        </li>`).join("");
+
+      $("#contactTitle").textContent = d.contact.title;
+      $("#contactText").textContent = d.contact.text;
+      const cb = $("#contactBtn"); cb.textContent = d.contact.buttonLabel; cb.href = mail;
+      $("#footerText").textContent = d.footer.text;
+      $("#year").textContent = new Date().getFullYear();
+
+      animateBars();
+    }
+
+    function animateBars() {
+      const bars = document.querySelectorAll(".bar-fill");
+      const set = (el) => { el.style.width = el.dataset.w + "%"; };
+      if (!("IntersectionObserver" in window) || matchMedia("(prefers-reduced-motion: reduce)").matches) { bars.forEach(set); return; }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { set(e.target); io.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      bars.forEach((b) => io.observe(b));
+    }
+
+    // Mobile menu
+    const btn = $("#menuBtn"), nav = $("#navMobile");
+    btn.addEventListener("click", () => {
+      const open = nav.classList.toggle("hidden") === false;
+      nav.classList.toggle("flex", open);
+      btn.setAttribute("aria-expanded", String(open));
+    });
+    nav.addEventListener("click", (e) => {
+      if (e.target.closest("a")) { nav.classList.add("hidden"); nav.classList.remove("flex"); btn.setAttribute("aria-expanded", "false"); }
+    });
+
+    // Netlify Identity: invite/recovery links land on /admin
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) window.netlifyIdentity.on("login", () => (document.location.href = "/admin/"));
+      });
+    }
+
+    // ===== Load CMS content =====
+    (async function init() {
+      let data = DEFAULTS;
+      try {
+        const res = await fetch("/content/site.json", { cache: "no-store" });
+        if (res.ok) data = merge(DEFAULTS, await res.json());
+      } catch (_) { /* keep defaults */ }
+      render(data);
+    })();
+  </script>
+</body>
+</html>
